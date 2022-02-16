@@ -8,6 +8,6 @@ fn main() {
     io::stdin().read_line(&mut guessing).expect("Can't read line");
     let guessing: &str = guessing.trim();
     let x: String = x.iter().collect();
-    println!("{}", finish[(guessing.eq(&x[0..6]) as usize)]);
+    println!("{}", finish[(guessing.eq(&x[0..7]) as usize)]);
     thread::sleep(Duration::from_millis(2000))
 }
